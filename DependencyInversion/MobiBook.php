@@ -2,10 +2,10 @@
 
 namespace Exercises\DependencyInversion;
 
-class PDFBook implements EBookInterface
+class MobiBook implements EBookInterface
 {
     public function read()
     {
-        return "reading a pdf book.";
+        return "reading a mobi book.";
     }
 }
