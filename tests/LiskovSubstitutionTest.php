@@ -3,7 +3,7 @@
 namespace Exercises\Tests;
 
 use Exercises\LiskovSubstitution\Rectangle;
-use Exercises\LiskovSubstitution\SquareBad;
+use Exercises\LiskovSubstitution\Square;
 use PHPUnit\Framework\TestCase;
 
 class LiskovSubstitutionTest extends TestCase
@@ -22,7 +22,7 @@ class LiskovSubstitutionTest extends TestCase
      */
     public function testSquareArea()
     {
-        $r = new SquareBad();
+        $r = new Square();
         $r->setHeight(4);
         $r->setWidth(5);
 

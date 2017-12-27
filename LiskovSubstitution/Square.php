@@ -2,7 +2,7 @@
 
 namespace Exercises\LiskovSubstitution;
 
-class SquareBad extends Rectangle
+class Square extends Rectangle
 {
     public function setHeight($value)
     {
