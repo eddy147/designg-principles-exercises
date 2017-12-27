@@ -3,6 +3,7 @@
 namespace Exercises\Tests;
 
 use Exercises\LiskovSubstitution\Rectangle;
+use Exercises\LiskovSubstitution\Square;
 use PHPUnit\Framework\TestCase;
 
 class LiskovSubstitutionTest extends TestCase
@@ -18,9 +19,8 @@ class LiskovSubstitutionTest extends TestCase
 
     public function testSquareArea()
     {
-        $r = new Rectangle();
-        $r->setHeight(4);
-        $r->setWidth(5);
+        $r = new Square();
+        $r->setSize(4);
 
         $this->assertSame(16, $r->area());
     }

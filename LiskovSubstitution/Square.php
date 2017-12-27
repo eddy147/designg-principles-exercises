@@ -2,17 +2,17 @@
 
 namespace Exercises\LiskovSubstitution;
 
-class Square extends Rectangle
+class Square
 {
-    public function setHeight($value)
+    private $size;
+
+    public function setSize($size)
     {
-        $this->width = $value;
-        $this->height = $value;
+        $this->size = $size;
     }
 
-    public function setWidth($value)
+    public function area()
     {
-        $this->width = $value;
-        $this->height = $value;
+        return $this->size * $this->size;
     }
 }
