@@ -17,12 +17,15 @@ class LiskovSubstitutionTest extends TestCase
         $this->assertSame(20, $r->area());
     }
 
+    /**
+     * @todo Fix the implementation, so that this test passes.
+     */
     public function testSquareArea()
     {
         $r = new Square();
         $r->setSize(4);
 
+        //this fails!
         $this->assertSame(16, $r->area());
     }
-
 }
